@@ -1,0 +1,19 @@
+### get list lecture
+
+GET http://localhost:3052/v1/api/lectures/int1234
+
+### get one lecture
+
+GET http://localhost:3052/v1/api/lecture/int1234_01
+
+### create lecture
+
+POST http://localhost:3052/v1/api/lectures
+Content-Type: application/json
+
+{
+    "name": "hoc phan tuan 3",
+    "code": "int3315_03",
+    "desc": "hay la minh cu bat cham het",
+    "courseId": "int3315"
+}

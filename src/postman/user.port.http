@@ -1,0 +1,18 @@
+### get list user
+
+GET http://localhost:3052/v1/api/users
+
+### create user
+
+POST http://localhost:3052/v1/api/users
+Content-Type: application/json
+
+{
+    "name": "Ma thị châu",
+    "userName": "chaumt",
+    "email": "chaumt@vnu.edu.vn",
+    "role": "TEACHER"
+}
+
+### get 1 user
+GET http://localhost:3052/v1/api/users/chaumt

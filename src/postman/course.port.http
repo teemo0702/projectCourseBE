@@ -1,0 +1,18 @@
+### get list course
+
+GET http://localhost:3052/v1/api/courses
+
+### create course
+
+POST http://localhost:3052/v1/api/courses
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImNoYXVtdCIsInJvbGUiOiJURUFDSEVSIiwiaWF0IjoxNjkzNTYzNzA2LCJleHAiOjE2OTM1NjczMDZ9.1bWHpNjNOBtZrnDYzd8YsvOXoURxjEuQUw1qggflq7I
+
+{
+    "name": "do an cuoi cung",
+    "code": "int332323",
+    "desc": "hay la minh cu bat cham het"
+}
+
+### get 1 course
+GET http://localhost:3052/v1/api/courses/int3315

@@ -1,0 +1,24 @@
+@url_dev=http://localhost:3052/v1/api
+
+### signup
+POST {{url_dev}}/user/signup
+Content-Type: application/json
+
+{
+    "name": "Ng12uy3en Nhat Nam1",
+    "email": "3702403036",
+    "password": "123qwe"
+}
+
+### login
+POST {{url_dev}}/auth
+Content-Type: application/json
+
+{
+    "userName": "chaumt",
+    "password": "123123"
+}
+
+### test token
+GET {{url_dev}}/courses
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImNoYXVtdCIsInJvbGUiOiJURUFDSEVSIiwiaWF0IjoxNjkzNTYzNzA2LCJleHAiOjE2OTM1NjczMDZ9.1bWHpNjNOBtZrnDYzd8YsvOXoURxjEuQUw1qggflq7I
