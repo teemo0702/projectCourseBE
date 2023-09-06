@@ -29,11 +29,11 @@ class CourseService {
     }
 
     static getCourse = async (courseId) => {
-        const course = await courseModel.findOne({ code: courseId }).exec()
+        const course = await courseModel.findOne({ _id: courseId }).exec()
         return {
             code: 0,
             message: 'data success',
-            reponse: course,
+            response: course,
         }
     }
 }

@@ -36,12 +36,12 @@ class LectureService {
         }
     }
 
-    static getLecture = async (lectureCode) => {
-        const lecture = await lectureModel.findOne({ code: lectureCode }).exec()
+    static getLecture = async (lectureId) => {
+        const lecture = await lectureModel.findOne({ _id: lectureId }).exec()
         return {
             code: 0,
             message: 'data success',
-            reponse: lecture,
+            response: lecture,
         }
     }
 }
